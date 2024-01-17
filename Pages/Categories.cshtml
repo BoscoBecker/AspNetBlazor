@@ -6,16 +6,16 @@
 }
 <!DOCTYPE html>
 
-    <h1>Categories</h1>
-    <table>
-        <thead>
+<h1>Categories</h1>
+<table>
+    <thead>
         <tr>
             <td>ID</td>
             <td>Title</td>
             <td>Price</td>
         </tr>
-        </thead>
-        <tbody>
+    </thead>
+    <tbody>
         @foreach (var Category in Model.CategoriesList)
         {
             <tr>
@@ -24,6 +24,6 @@
                 <td>@Category.Price.ToString("C", new CultureInfo("pt-BR"))</td>
             </tr>
         }
-        </tbody>
-    </table>
+    </tbody>
+</table>
 
