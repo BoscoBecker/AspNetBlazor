@@ -1,0 +1,16 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> ASP.Net pages with Razor </title>
+        <link rel="stylesheet" href="CSS/Style.css" asp-append-version="true">
+        <link rel="stylesheet" href="~/WebAsp.styles.css" asp-append-version="true">
+    </head>
+<body>
+<header><partial name="Shared/NavMenuPartial"/></header>
+<main>
+    @RenderBody()
+</main>
+</body>
+<footer>Powered by Balta.oi</footer>
+    @RenderSection("scripts", false);
+</html>
